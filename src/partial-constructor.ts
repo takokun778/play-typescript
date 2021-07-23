@@ -26,6 +26,6 @@ export class User {
             lastName: props.lastName ?? this.lastName,
             firstName: props.firstName ?? this.firstName,
             birthday: props.birthday ?? this.birthday,
-        })
+        });
     }
 }
