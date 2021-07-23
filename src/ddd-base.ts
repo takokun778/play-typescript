@@ -16,6 +16,22 @@ export class User extends Entity<UserProps> {
         super(props);
     }
 
+    get id() {
+        return this.props.id.toValue();
+    }
+
+    get lastName() {
+        return this.props.lastName;
+    }
+
+    get firstName() {
+        return this.props.firstName;
+    }
+
+    get birthday() {
+        return this.props.birthday;
+    }
+
     static new(init: Omit<UserProps, 'id'>) {
         return new User({
             id: new Id(uuid.v4()),
