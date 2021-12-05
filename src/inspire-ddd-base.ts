@@ -9,7 +9,7 @@ interface UserProps {
 }
 
 export class User {
-    private readonly props: Readonly<UserProps>
+    private readonly props: Readonly<UserProps>;
 
     private constructor(props: UserProps) {
         this.props = props;
